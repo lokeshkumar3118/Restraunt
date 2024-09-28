@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Grand Restaurant Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffa07a;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ff4500;
+        }
+        section {
+            padding: 2rem;
+        }
+        h2 {
+            color: #32cd32;
+            font-size: 2rem;
+        }
+        h3 {
+            color: #ff4500;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fffacd;
+            border: 2px solid #ff7f50;
+            border-radius: 10px;
+            padding: 0.5rem;
+            width: 80%;
+            margin: 0 auto 1rem auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 1rem;
+            border-radius: 10px;
+        }
+        .menu-item h3 {
+            margin: 0;
+            color: #d2691e;
+            flex-grow: 1;
+            text-align: left;
+        }
+        .menu-item span {
+            font-weight: bold;
+            color: #ff4500;
+            text-align: right;
+        }
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .feedback-section {
+            margin-top: 2rem;
+        }
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #f5f5dc;
+            padding: 1rem;
+            border: 2px solid #ffa07a;
+            border-radius: 10px;
+        }
+        .feedback-form input, .feedback-form textarea, .feedback-form select {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Royal Grand Restaurant</h1>
+    </header>
+    <nav>
+        <a href="#desserts">Desserts</a>
+        <a href="#cooldrinks">Cool Drinks</a>
+        <a href="#hotdrinks">Hot Drinks</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="desserts">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/TbWyWCm/Gulab-Jamun.png" alt="Gulab-Jamun">
+            <h3>Gulab Jamun</h3>
+            <span>₹100</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/phyjVGN/Rasgulla.png" alt="Rasgulla">
+            <h3>Rasgulla</h3>
+            <span>₹100</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/vHWQps6/Jalebi.png" alt="Jalebi">
+            <h3>Jalebi</h3>
+            <span>₹90</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/9TQt4z9/Malai-Barfi.png" alt="Malai-Barfi">
+            <h3>Malai Barfi</h3>
+            <span>₹110</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/tDMWwzb/Motichoor-Ladoo.png" alt="Motichoor-Ladoo">
+            <h3>Motichoor Ladoo</h3>
+            <span>₹80</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/zbFsJdR/Cupcake.png" alt="Cupcakes">
+            <h3>Cupcakes</h3>
+            <span>₹70</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/NWvSq5r/Brownie.png" alt="Brownies">
+            <h3>Brownies</h3>
+            <span>₹90</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/zn3ntcC/Cheesecake.png" alt="Cheesecakes">
+            <h3>Cheesecakes</h3>
+            <span>₹150</span>
+        </div>
+    </section>
+    <section id="cooldrinks">
+        <h2>Beverages</h2>
+        <h3>Cool Drinks</h3>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/c897V7f/Buttermilk.png" alt="Buttermilk">
+            <h3>Buttermilk</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/0QNRStK/Falooda.png" alt="Falooda">
+            <h3>Falooda</h3>
+            <span>₹120</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/hBXF1qd/Coca-Cola.png" alt="Coca-Cola">
+            <h3>Coca Cola</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/WPdqd0D/Pepsi.png" alt="Pepsi">
+            <h3>Pepsi</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/TLJnK3f/Sprite.png" alt="Sprite">
+            <h3>Sprite</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/28VtMNR/Mirinda.png" alt="Mirinda">
+            <h3>Mirinda</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/5249pJj/Fanta.png" alt="Fanta">
+            <h3>Fanta</h3>
+            <span>₹40</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/KFb6PZb/Thumbs-Up-bottle.png" alt="Thumbs Up">
+            <h3>Thumbs Up</h3>
+            <span>₹40</span>
+        </div>
+    </section>
+    <section id="hotdrinks">
+        <h3>Hot Drinks</h3>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/ChSY9s8/Masala-Chai.png" alt="Masala Chai">
+            <h3>Masala Chai</h3>
+            <span>₹50</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/njbY05G/Filter-Coffee.png" alt="Filter Coffee">
+            <h3>Filter Coffee</h3>
+            <span>₹50</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/HCK6ZdD/Irani-Chai.png" alt="Irani Chai">
+            <h3>Irani Chai</h3>
+            <span>₹60</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/zf24cM0/Lemon-Tea.png" alt="Lemon Tea">
+            <h3>Lemon Tea</h3>
+            <span>₹70</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.ibb.co/HDBs96N/Black-Coffee.png" alt="Black Coffee">
+            <h3>Black Coffee</h3>
+            <span>₹80</span>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@royalgrandrestaurant.com</p>
+        <p>Phone: +91 9999988888</p>
+        <p>Address: Flat # 601, Secunderabad, Hyderabad, Telangana 500003</p>
+    </section>
+    <section id="feedback" class="feedback-section">
+        <h2>Customer Feedback</h2>
+        <form class="feedback-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="feedback" placeholder="Your Feedback" required></textarea>
+            <label for="rating">Rating:</label>
+            <select name="rating" id="rating" required>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Indian Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
